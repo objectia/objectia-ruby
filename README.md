@@ -17,11 +17,6 @@ want to use the package, just run:
     gem install objectia
 ```
 
-Install from source with:
-
-```bash
-    python setup.py install
-```
 ### Requirements
 
 * Ruby 2.2+
