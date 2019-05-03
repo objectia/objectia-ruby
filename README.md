@@ -4,9 +4,11 @@
 
 Ruby client for Objectia API
 
+
 ## Documentation
 
 See the [Ruby API docs](https://docs.objectia.com/guide/ruby.html).
+
 
 ## Installation
 
@@ -16,6 +18,7 @@ want to use the package, just run:
 ```bash
     gem install objectia
 ```
+
 
 ### Requirements
 
