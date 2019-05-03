@@ -16,7 +16,7 @@ You don't need this source code unless you want to modify the package. If you ju
 want to use the package, just run:
 
 ```bash
-    gem install objectia
+gem install objectia
 ```
 
 
