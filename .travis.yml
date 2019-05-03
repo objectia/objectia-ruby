@@ -1,0 +1,15 @@
+language: ruby
+
+rvm:
+  - 2.2.10
+  - 2.3.7
+  - 2.4.5
+  - 2.5.4
+  - 2.6.1
+
+#before_install:
+#  - npm -g install git+https://git@github.com/objectia/twostep-mock-server.git
+#  - NODE_VER=`node --version`
+#  - node /home/travis/.nvm/versions/node/$NODE_VER/lib/node_modules/twostep-mock-server/lib/index.js &
+
+script: bundle exec rake
