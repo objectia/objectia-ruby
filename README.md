@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/objectia/objectia-ruby.svg?branch=master)](https://travis-ci.org/objectia/objectia-ruby)
 <!--[![codecov](https://codecov.io/gh/objectia/objectia-ruby/branch/master/graph/badge.svg)](https://codecov.io/gh/objectia/objectia-ruby)-->
 
-Ruby client for Objectia API
+Ruby client for [Objectia API](https://objectia.com)&reg;
 
 
 ## Documentation
