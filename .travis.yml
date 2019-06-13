@@ -5,8 +5,7 @@ rvm:
   - 2.5.4
   - 2.6.1
 
-install: true
-
-#script: 
-#- echo "skipping tests"
+script:
+- bundle install
+- echo "skipping tests"
 #- bundle exec rake
