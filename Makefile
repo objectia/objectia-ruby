@@ -3,7 +3,8 @@ test:
 	rake
 
 release:
+	@rm -rf objectia-*.gem
 	gem build objectia.gemspec
 
 upload:
-	gem push objectia-0.9.2.gem	
+	gem push objectia-*.gem	
