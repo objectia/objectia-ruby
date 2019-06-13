@@ -22,7 +22,7 @@ gem install objectia
 
 ### Requirements
 
-* Ruby 2.2+
+* Ruby 2.4+
 
 
 ## Usage

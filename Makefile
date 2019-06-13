@@ -6,4 +6,4 @@ release:
 	gem build objectia.gemspec
 
 upload:
-	gem push objectia-0.9.1.gem	
+	gem push objectia-0.9.2.gem	
