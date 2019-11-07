@@ -6,7 +6,7 @@ module Objectia
     end  
 
     def get()
-      return @rest_client.get("/usage")
+      return @rest_client.get("/v1/usage")
     end  
 
   end

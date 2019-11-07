@@ -7,7 +7,7 @@ module Objectia
 
     def get(ip, options={})
       query = URI.encode_www_form(options)
-      return @rest_client.get("/geoip/#{ip}?#{query}")
+      return @rest_client.get("/v1/geoip/#{ip}?#{query}")
     end  
 
     def get_current(options={})
