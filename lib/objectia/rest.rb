@@ -46,7 +46,7 @@ module Objectia
 
       begin
         RestClient::Request.execute(method: method, url: @api_base_url + path, payload: data, headers: headers, timeout: @timeout) { |response, request, result, &block|
-          print &block
+          #print &block
           case response.code
           when 200, 201
             body = JSON.parse(response) #FIXME: Handle 204 No content
@@ -62,7 +62,6 @@ module Objectia
             rescue Errno::ECONNREFUSED, Errno::EINVAL, Errno::ECONNRESET, EOFError,
               Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
               SocketError => e
-              print "EEEEEEEE---------------------"
               raise APIConnectionError.new(e.message)
             end
           end

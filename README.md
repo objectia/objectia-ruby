@@ -7,7 +7,7 @@ Ruby client for [Objectia API](https://objectia.com)&reg;
 
 ## Documentation
 
-See the [Ruby API docs](https://docs.objectia.com/guide/ruby.html).
+See the [Ruby API docs](https://docs.objectia.com/ruby/).
 
 
 ## Installation
@@ -22,7 +22,7 @@ gem install objectia
 
 ### Requirements
 
-* Ruby 2.4+
+* Ruby 2.2 or later
 
 
 ## Usage
