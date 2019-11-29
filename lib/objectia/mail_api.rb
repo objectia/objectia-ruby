@@ -5,7 +5,8 @@ module Objectia
       "type" => "object",
       "properties" => {
         "date" => {
-          "type" => "date"
+          "type" => "string",
+          "format" => "date-time"
         },
         "from" => {
           "type" => "string",
@@ -107,10 +108,13 @@ module Objectia
     end  
 
     def send(message)
-      unless JSON::Validator.validate(SCHEMA, message, :strict => true) 
-        print "VALIDATION ERROR"
+      # Validate message
+      begin
+        JSON::Validator.validate!(SCHEMA, message, :strict => false)
+      rescue JSON::Schema::ValidationError => e
+        raise ArgumentError.new("Message has missing or invalid attributes")
       end
-
+      # Extract files
       files = []
       if message.key?("attachments")
         files = message["attachments"]

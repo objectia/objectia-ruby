@@ -49,7 +49,7 @@ module Objectia
           #print &block
           case response.code
           when 200, 201
-            body = JSON.parse(response) #FIXME: Handle 204 No content
+            body = JSON.parse(response) 
             return body["data"]            
           else
             begin

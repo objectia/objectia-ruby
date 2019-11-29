@@ -62,6 +62,7 @@ module ObjectiaTest
         receipt = client.mail.send(message)
         assert_equal 1, receipt["accepted_recipients"]
       rescue Objectia::ResponseError => e
+        print e.message
         assert(false)
       end    
     end
